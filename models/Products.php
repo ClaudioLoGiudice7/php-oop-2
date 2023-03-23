@@ -14,7 +14,7 @@ class Products
         int $_price,
     ) {
         $this->name = $_name;
-        $this->name = $_img;
-        $this->name = $_price;
+        $this->img = $_img;
+        $this->price = $_price;
     }
 }
