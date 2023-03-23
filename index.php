@@ -10,50 +10,103 @@
 tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia). -->
 
 <?php
-class Prodotti
-{
 
+class Products
+{
     // all'interno della classe sono dichiarate delle variabili d'istanza
+    public $name;
+    public $img;
+    public $price;
 
     // all'interno della classe è definito un costruttore
-
+    function __construct(
+        string $_name,
+        string $_img,
+        int $_price,
+    ) {
+        $this->name = $_name;
+        $this->name = $_img;
+        $this->name = $_price;
+    }
 }
 
-class Categorie
+class Categories
 {
-
     // all'interno della classe sono dichiarate delle variabili d'istanza
+    public $name;
 
     // all'interno della classe è definito un costruttore
-
+    function __construct(string $_name)
+    {
+        $this->name = $_name;
+    }
 }
 
-class Cibo
-{
+$categories1 = new Categories("Cat");
+$categories2 = new Categories("Dog");
 
+
+
+class Food extends Products
+{
     // all'interno della classe sono dichiarate delle variabili d'istanza
+    public $consistency;
+    public $expiry_date;
+    public $flavour;
 
     // all'interno della classe è definito un costruttore
-
+    function __construct(
+        string $_name,
+        string $_img,
+        string $_price,
+        string $_consistency,
+        string $_expiry_date,
+        string $_flavour
+    ) {
+        parent::__construct($_name, $_img, $_price);
+        $this->consistency = $_consistency;
+        $this->expiry_date = $_expiry_date;
+        $this->flavour = $_flavour;
+    }
 }
 
-class Giochi
+class Toys extends Products
 {
-
     // all'interno della classe sono dichiarate delle variabili d'istanza
+    public $type;
+    public $material;
 
     // all'interno della classe è definito un costruttore
-
+    function __construct(
+        string $_name,
+        string $_img,
+        string $_price,
+        string $_type,
+        string $_material
+    ) {
+        parent::__construct($_name, $_img, $_price);
+        $this->type = $_type;
+        $this->material = $_material;
+    }
 }
 
-class Cucce
+class Kennels extends Products
 {
-
     // all'interno della classe sono dichiarate delle variabili d'istanza
+    public $material;
 
     // all'interno della classe è definito un costruttore
-
+    function __construct(
+        string $_name,
+        string $_img,
+        string $_price,
+        string $_material
+    ) {
+        parent::__construct($_name, $_img, $_price);
+        $this->material = $_material;
+    }
 }
+
 ?>
 
 <!DOCTYPE html>
