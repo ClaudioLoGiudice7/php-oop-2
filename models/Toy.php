@@ -1,6 +1,6 @@
 <?php
 
-class Toys extends Products
+class Toy extends Product
 {
     // all'interno della classe sono dichiarate delle variabili d'istanza
     public $type;
@@ -20,6 +20,6 @@ class Toys extends Products
     }
 }
 
-$toys1 = new Toys("Topo con Pallina", "../img/topo_con_pallina.png", round(3.10), "Peluche", "Stoffa");
-$toys2 = new Toys("Gioco per Cane", "../img/gioco_per_cane.png", round(7.50), "Palla", "Gomma");
-$toys3 = new Toys("Gioco per Cane Corda Osso", "../img/gioco_per_cane_corda_osso.png", round(4.13), "Corda", "Cotone");
+$toy1 = new Toy("Topo con Pallina", "../img/topo_con_pallina.png", round(3.10), "Peluche", "Stoffa");
+$toy2 = new Toy("Gioco per Cane", "../img/gioco_per_cane.png", round(7.50), "Palla", "Gomma");
+$toy3 = new Toy("Gioco per Cane Corda Osso", "../img/gioco_per_cane_corda_osso.png", round(4.13), "Corda", "Cotone");

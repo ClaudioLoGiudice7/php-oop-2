@@ -1,6 +1,6 @@
 <?php
 
-class Food extends Products
+class Food extends Product
 {
     // all'interno della classe sono dichiarate delle variabili d'istanza
     public $consistency;

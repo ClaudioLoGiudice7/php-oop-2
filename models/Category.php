@@ -1,6 +1,6 @@
 <?php
 
-class Categories
+class Category
 {
     // all'interno della classe sono dichiarate delle variabili d'istanza
     public $name;
@@ -12,5 +12,5 @@ class Categories
     }
 }
 
-$categories1 = new Categories("Cat");
-$categories2 = new Categories("Dog");
+$category1 = new Category("Cat");
+$category2 = new Category("Dog");

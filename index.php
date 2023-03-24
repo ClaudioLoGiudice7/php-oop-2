@@ -11,11 +11,11 @@ tipo di articolo che si sta visualizzando (prodotto, cibo, gioco, cuccia). -->
 
 <?php
 
-include_once __DIR__ . "./models/Products.php";
-include_once __DIR__ . "./models/Categories.php";
+include_once __DIR__ . "./models/Product.php";
+include_once __DIR__ . "./models/Category.php";
 include_once __DIR__ . "./models/Food.php";
-include_once __DIR__ . "./models/Toys.php";
-include_once __DIR__ . "./models/Kennels.php";
+include_once __DIR__ . "./models/Toy.php";
+include_once __DIR__ . "./models/Kennel.php";
 
 ?>
 

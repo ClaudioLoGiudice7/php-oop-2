@@ -1,6 +1,6 @@
 <?php
 
-class Products
+class Product
 {
     // all'interno della classe sono dichiarate delle variabili d'istanza
     public $name;
